@@ -1,0 +1,83 @@
+
+.nameP{ height: 3em;
+    width: 50vw;
+ text-align: center;
+ color: white;
+}
+.profile{
+    overflow-x: hidden;
+    display: flex;
+   flex-direction: column;
+    border-radius: 5%;
+    width: 50vw;
+    height: 70vh;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.23);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.9px);
+-webkit-backdrop-filter: blur(8.9px);
+}
+.list{
+    display: flex;
+    justify-content:space-around ;
+    
+}
+
+.currentpass{
+    width: 40vw;
+    height: 5vh;
+}
+.validpass{
+    height: 100%;
+    width: 5vw;
+}
+.passenter{
+    justify-content: center;
+    align-items: center;
+    display: flex;}
+.labelp{
+color: aliceblue;
+
+text-align: center;}
+.cpass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+ }
+ .cartli{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   list-style: none;
+   height: 5vh;
+  }
+  .listp{
+    background-color: aliceblue;
+    height: 20vh;
+    overflow-y: scroll;
+width: 50vw;
+  }
+
+  .bodyp{
+	height: 100vh;
+justify-content: center;
+align-items: center;
+display: flex;
+overflow: hidden;
+  }
+
+
+   .inputs{
+    
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+   }
+   .title-profile{
+color: aliceblue;
+    text-align: center;
+   }

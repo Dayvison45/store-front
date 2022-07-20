@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.login{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png');
+    width: 50vw;
+    height: 50vh;
+}
+.containerl{
+    position: absolute;
+overflow: hidden;
+background-color: black;
+display: flex;
+width: 100vw;
+height: 100vh;
+align-items: center;
+justify-content: center;
+}
+.labell{
+font-size: xx-large;
+color: rgb(255, 255, 255);
+font-family: 'Alfa Slab One', cursive;
+}
+.labell[h1]{
+    color: dimgray;
+    margin-top: -400px;
+    position: absolute;
+}
+.loginSubmit{
+cursor: pointer;
+margin-top: 60px;
+width: 40%;
+height: 10%;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+   cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+   color: #fff;
+    padding: 12px 40px;
+    margin-top: 40px;
+}
+.input-log{
+height: 3vh;
+width: 20vw;
+}
