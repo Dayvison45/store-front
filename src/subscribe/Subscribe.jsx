@@ -6,7 +6,7 @@ const [pass,setpass] = useState('')
 const [name,setname] = useState('')
 const handleSub =(e)=>{
 e.preventDefault()
-axios.post('http://localhost:3001/subscribe',{name:name,password:pass}).then(response=>console.log(response))
+axios.post('https://store-dayvison.herokuapp.com/subscribe',{name:name,password:pass}).then(response=>console.log(response))
 
 }
     return(<>
