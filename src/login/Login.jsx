@@ -11,7 +11,7 @@ const [name,setname] = useState('')
 const handleSub = async(e)=>{
 
  e.preventDefault()
- await axios.post('http://localhost:3001/login',{name:name,password:pass}).then((response)=>setdata(response))
+ await axios.post('https://store-dayvison.herokuapp.com/login',{name:name,password:pass}).then((response)=>setdata(response))
 
 
 }
@@ -20,7 +20,7 @@ useEffect((()=>{   if(data.status){ if(data.status ===200){
    sessionStorage.setItem('token', data.data.token);
    sessionStorage.setItem('like', data.data.user.like);
    sessionStorage.setItem('cart', data.data.user.cart);
-   window.location.replace('http://localhost:3000')
+   window.location.replace('https://store-front-lac.vercel.app/home')
 
  }else{console.log(data.data) }}}),[data])
 
