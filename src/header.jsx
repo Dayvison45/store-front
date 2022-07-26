@@ -28,7 +28,7 @@ await axios.get(`http://localhost:3001/profile/${name}/Bearer ${token}`).then(re
 if(code !== 200){
 console.log('acesso negado')
 
-}else{window.location.replace('http://localhost:3000/profile')}}
+}else{window.location.replace('https://store-dayvison.herokuapp.com/profile')}}
 
 
 
