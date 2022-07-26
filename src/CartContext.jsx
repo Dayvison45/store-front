@@ -14,7 +14,7 @@ useEffect(()=>{
     const name = sessionStorage.getItem('name') 
     if(name && cart.length>0){
 
-axios.post('http://localhost:3001/updatecart',{name:name,item:cart,headers:{"Authorization":`Bearer ${token}`}})
+axios.post('https://store-dayvison.herokuapp.com/updatecart',{name:name,item:cart,headers:{"Authorization":`Bearer ${token}`}})
 sessionStorage.setItem("cart",cart)
 
 }
