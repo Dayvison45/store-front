@@ -16,14 +16,14 @@ const token = sessionStorage.getItem('token')
     const name = sessionStorage.getItem('name') 
 if(name && e.length>0){
 
-  axios.post('http://localhost:3001/updatecart',{name:name,item:e,headers:{"Authorization":`Bearer ${token}`}})
+  axios.post('https://store-dayvison.herokuapp.com/updatecart',{name:name,item:e,headers:{"Authorization":`Bearer ${token}`}})
   sessionStorage.setItem("cart",e)
   
   }}
 
 const changepass = async(e)=>{
   e.preventDefault()
-  await axios.post('http://localhost:3001/login')
+  await axios.post('https://store-dayvison.herokuapp.com/login')
 }
   const name = sessionStorage.getItem('name')
  
