@@ -20,7 +20,7 @@ useEffect((()=>{   if(data.status){ if(data.status ===200){
    sessionStorage.setItem('token', data.data.token);
    sessionStorage.setItem('like', data.data.user.like);
    sessionStorage.setItem('cart', data.data.user.cart);
-   window.location.replace('https://store-front-lac.vercel.app/home')
+   window.location.replace('https://store-front-lac.vercel.app/')
 
  }else{console.log(data.data) }}}),[data])
 
