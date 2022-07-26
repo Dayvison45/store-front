@@ -8,7 +8,7 @@ const [data,setdata] = useState([])
 const [cart,setcart] = useContext(CartContext)
 
 useEffect(()=>{const run = async () => {
-  await fetch('http://localhost:3001/home').then((response)=>response.json()).then(response=>setdata(response))}
+  await fetch('https://store-dayvison.herokuapp.com/home').then((response)=>response.json()).then(response=>setdata(response))}
 run()})
 useEffect(()=>{
 const token = sessionStorage.getItem('token')
