@@ -24,7 +24,7 @@ const name = sessionStorage.getItem('name')
 const token = sessionStorage.getItem('token')
 
 let code;
-await axios.get(`http://localhost:3001/profile/${name}/Bearer ${token}`).then(response=>code = response.status)
+await axios.get(`https://store-dayvison.herokuapp.com/profile/${name}/Bearer ${token}`).then(response=>code = response.status)
 if(code !== 200){
 console.log('acesso negado')
 
